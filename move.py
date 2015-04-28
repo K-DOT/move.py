@@ -28,7 +28,7 @@ def test():
             filepath = os.path.join(path, random.choice(['application', 'auth', 'security', 'user', 'kern'])\
             +'-20140429%s%s' % (logcount, random.choice(['.log', '.log.gz']))) 
             with open(filepath, 'w'): pass
-    #movefiles(basedir, verbose=True)
+    movefiles(basedir, verbose=True)
     print('Done. See the results.')
     exit(0)
 
